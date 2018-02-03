@@ -18,8 +18,7 @@ class String
 
   def count_sentences
 
-    sentences = []
-    sentences << self.split(/[.!?]/).reject(&:empty?).count { |string| string }
+    self.split(/[.!?]/).reject(&:empty?).count { |string| string }
     # self.split(/[.!?]/)
     # self.count(".!?")
   end
