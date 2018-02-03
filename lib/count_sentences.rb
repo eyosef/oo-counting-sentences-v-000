@@ -17,7 +17,7 @@ class String
   end
 
   def count_sentences
-    #note to self - sentence splitting occurs once - need a conditional that iterates over the string until it is parsed at every point there is a .,! or ?
+    
     self.split(/[.!?]/)
     self.count(".!?")
     binding.pry
