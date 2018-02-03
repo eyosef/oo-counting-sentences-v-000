@@ -17,10 +17,7 @@ class String
   end
 
   def count_sentences
-
     self.split(/[.!?]/).reject(&:empty?).count { |string| string }
-    # self.split(/[.!?]/)
-    # self.count(".!?")
   end
 
 end #class
