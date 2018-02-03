@@ -17,10 +17,11 @@ class String
   end
 
   def count_sentences
-    
-    self.split(/[.!?]/)
-    self.count(".!?")
-    binding.pry
+
+    sentences = []
+    << string.split(/[.!?]/).reject(&:empty?).count { |string| string }
+    # self.split(/[.!?]/)
+    # self.count(".!?")
   end
 
 end #class
